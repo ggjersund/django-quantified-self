@@ -1,10 +1,16 @@
 # Django Quantified Self
 
-A Quantified Self application for collecting, storing, analysing and exporting your personal data.
+A Quantified Self Django application for collecting, storing, analysing and exporting your personal data.
 
 ## Quick start
 
-### Prerequisites 
+### Prerequisites
+
+```
+pipenv
+python>=3.7
+django>=2.2
+```
 
 ### Installing
 

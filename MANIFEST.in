@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include quantified_self/static *
+recursive-include quantified_self/templates *
+recursive-include docs *
