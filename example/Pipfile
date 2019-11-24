@@ -6,10 +6,9 @@ name = "pypi"
 [packages]
 django = "*"
 
-[dev-packages]
-
 [requires]
 python_version = "3.7"
 
-[packages.346e0ee]
-path = "./../dist/django-quantified-self-0.1.tar.gz"
+[dev-packages.ed0a5ba]
+path = "./.."
+editable = true

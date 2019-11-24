@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "606fd7e05386fa3f7a43bd552825c6420267dd9e129a41ce0637c13fdbc3ee59"
+            "sha256": "47ef854e4f1a1b7792dc9cff20bf067de992d9c2c6527508c5d2f017f134517c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,9 +16,6 @@
         ]
     },
     "default": {
-        "346e0ee": {
-            "path": "./../dist/django-quantified-self-0.1.tar.gz"
-        },
         "django": {
             "hashes": [
                 "sha256:16040e1288c6c9f68c6da2fe75ebde83c0a158f6f5d54f4c5177b0c1478c5b86",
@@ -42,5 +39,10 @@
             "version": "==0.3.0"
         }
     },
-    "develop": {}
+    "develop": {
+        "ed0a5ba": {
+            "editable": true,
+            "path": "./.."
+        }
+    }
 }
