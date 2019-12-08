@@ -1,0 +1,6 @@
+<h2>Interval events</h2>
+<ul>
+    {% for event in object_list %}
+        <li><a href="{% url 'quantified_self:interval-detail' event.uuid %}">{{ event.title }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,15 +1,27 @@
-from django.views.generic import ListView
-from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
-from quantified_self.models import IntervalEvent
+from quantified_self.models import IntervalEvent, IntCountEvent
 
 
 class IntervalEventList(ListView):
     model = IntervalEvent
-    template_name = "quantified_self/interval_event_list.html"
+    template_name = "quantified_self/interval_list.html"
 
-def index(request):
-    """
-    Index view
-    """
-    return render(request, 'quantified_self/index.html', {})
+
+class IntCountEventList(ListView):
+    model = IntCountEvent
+    template_name = "quantified_self/integer_count_list.html"
+
+
+class IntervalEventDetail(DetailView):
+    model = IntervalEvent
+    slug_url_kwarg = "uuid"
+    slug_field = "uuid"
+    template_name = "quantified_self/interval_detail.html"
+
+
+class IntCountEventDetail(DetailView):
+    model = IntCountEvent
+    slug_url_kwarg = "uuid"
+    slug_field = "uuid"
+    template_name = "quantified_self/integer_count_detail.html"
