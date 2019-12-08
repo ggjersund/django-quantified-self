@@ -1,6 +1,6 @@
 # Django Quantified Self
 
-A Quantified Self Django application for collecting, storing, analysing and exporting your personal data.
+A minimalistic "Quantified Self" Django application for collecting, storing, analysing and exporting your personal data.
 
 ## Quick start
 
@@ -9,17 +9,16 @@ A Quantified Self Django application for collecting, storing, analysing and expo
 ```
 pipenv
 python>=3.7
-django>=2.2
+django>=2.2.8
 ```
 
 ### Installing
 
 ## Roadmap
 
-* Create data entry model
-* Create category management for labeling data entries
-* Start/Pause/End data entries
-* Increment/Decrement data entries
+* Create data entry models for sleep, work, exercise and beverage consumption.
+* Create category management for labeling data entries.
+* Start/Pause/End/Increment/Decrement data entries
 * List all entries + data filtering
 * Export entries (JSON endpoint and CSV file to begin with)
 * Import entries (JSON endpoint and CSV file to begin with)
