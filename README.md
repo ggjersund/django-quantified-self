@@ -8,20 +8,18 @@ A minimalistic "Quantified Self" Django application for collecting, storing, ana
 
 ```
 pipenv
-python>=3.7
-django>=2.2.8
+python
+django
 ```
 
 ### Installing
 
 ## Roadmap
 
-* Create data entry models for sleep, work, exercise and beverage consumption.
-* Create category management for labeling data entries.
-* Start/Pause/End/Increment/Decrement data entries
-* List all entries + data filtering
-* Export entries (JSON endpoint and CSV file to begin with)
-* Import entries (JSON endpoint and CSV file to begin with)
+* ~~Create generic data entry models for interval and count entries~~
+* List all entries (HTML/API) + data filtering
+* Export entries
+* Import entries
 
 More to come...
 
