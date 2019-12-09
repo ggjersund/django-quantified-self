@@ -4,6 +4,7 @@ from quantified_self import views
 app_name = 'quantified_self'
 
 urlpatterns = [
+    path('', views.Overview.as_view(), name="overview"),
     path('intervals/', views.IntervalEventList.as_view(), name="interval-list"),
     path('intervals/<uuid:uuid>/', views.IntervalEventDetail.as_view(), name="interval-detail"),
     path('counts/', views.IntCountEventList.as_view(), name="count-list"),

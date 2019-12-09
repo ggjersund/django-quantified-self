@@ -1,7 +1,10 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView
 
 from quantified_self.models import IntervalEvent, IntCountEvent
 
+
+class Overview(TemplateView):
+    template_name = "quantified_self/overview.html"
 
 class IntervalEventList(ListView):
     model = IntervalEvent
